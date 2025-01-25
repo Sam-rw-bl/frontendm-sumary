@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        amarelo:'#e6c744',
+                        cinza:'#c2c8da'
+                        
+                    },
+                    screens:{
+                        '3xl':'1920px'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-slate-300">
+    <div class="bg-white rounded-[28px] shadow-lg flex overflow-hidden max-w-[614px] h-[415px]">
+        <div class="bg-blue-600 text-white rounded-[28px] p-8 flex flex-col items-center justify-center w-1/2">
+            <h3 class="text-[22px] font-semibold mb-4">Your Result</h3>
+            <div class="bg-blue-700 rounded-full w-[165px] h-[165px] flex items-center justify-center flex-col mb-4">
+                <h1 class="text-5xl font-bold ">76</h1>
+                <p class="text-xl mt-3 font-semibold">of 100</p>
+            </div>
+            <h3 class="font-bold text-2xl mb-3">Great</h3>
+            <p class="text-center text-xl py-0">You scored higher than 65% of the people who have taken these tests.</p>
+        </div>
+        <div class="p-8 w-1/2">
+            <h3 class="font-bold text-xl pb-4">Summary</h3>
+            <ul class=" ">
+                <li class="flex justify-between items-center mb-2 bg-red-100 p-2 rounded-lg py-4">
+                    <div class="flex justify-between items-center">
+                        <img src="img/icon-reaction.svg" alt="">
+                        <span class="text-red-900 font-semibold ml-2">Reaction</span>
+                    </div>
+                    <span><b>80</b> / 100</span>
+                </li>
+                <li class="flex justify-between items-center mb-2 bg-yellow-100 p-2 rounded-lg py-4">
+                    <div class="flex justify-between items-center">
+                        <img src="img/icon-memory.svg" alt="">
+                        <span class="text-yellow-900 font-semibold ml-2">Memory</span>
+                    </div>
+                    <span><b>92</b> / 100</span>
+                </li>
+                <li class="flex justify-between items-center mb-2 bg-green-100 p-2 rounded-lg py-4">
+                    <div class="flex justify-between items-center">
+                        <img src="img/icon-verbal.svg" alt="">
+                        <span class="text-green-900 font-semibold ml-2">Verbal</span>
+                    </div>
+                    <span><b>61</b> / 100</span>
+                </li>
+                <li class="flex justify-between items-center mb-2 bg-red-100 p-2 rounded-lg py-4 mb-5">
+                    <div class="flex justify-between items-center">
+                        <img src="img/icon-visual.svg" alt="">
+                        <span class="text-red-900 font-semibold ml-2">Visual</span>
+                    </div>
+                    <span><b>72</b> / 100</span>
+                </li>
+            </ul>
+            <a href="#!" class=" flex justify-center bg-gray-800 text-white font-semibold rounded-[35px] text-xl text-center p-3 hover:bg-blue-600 hover:scale-110 duration-200">Continue</a>
+        </div>
+    </div>
+</body>
+</html>

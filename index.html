@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frontend Mentor - Summary</title>
+
+    <link rel="shortcut icon" href="./img/favicon-32x32.png" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -22,16 +24,16 @@
         }
     </script>
 </head>
-<body class="flex items-center justify-center min-h-screen bg-slate-300">
-    <div class="bg-white rounded-[28px] shadow-lg flex overflow-hidden max-w-[614px] h-[415px]">
-        <div class="bg-blue-600 text-white rounded-[28px] p-8 flex flex-col items-center justify-center w-1/2">
+<body class="flex items-center justify-center min-h-screen bg-slate-300 ">
+    <div class="bg-white rounded-[28px] shadow-lg flex overflow-hidden max-w-[614px] h-[415px] ">
+        <div class="bg-blue-600 text-white rounded-[28px] p-8 flex flex-col items-center justify-center w-1/2 group">
             <h3 class="text-[22px] font-semibold mb-4">Your Result</h3>
-            <div class="bg-blue-700 rounded-full w-[165px] h-[165px] flex items-center justify-center flex-col mb-4">
+            <div class="bg-blue-700 rounded-full w-[165px] h-[165px] flex items-center justify-center flex-col mb-4 group-hover:animate-pulse duration-300">
                 <h1 class="text-5xl font-bold ">76</h1>
                 <p class="text-xl mt-3 font-semibold">of 100</p>
             </div>
             <h3 class="font-bold text-2xl mb-3">Great</h3>
-            <p class="text-center text-xl py-0">You scored higher than 65% of the people who have taken these tests.</p>
+            <p class="text-center text-xl py-0 scale">You scored higher than 65% of the people who have taken these tests.</p>
         </div>
         <div class="p-8 w-1/2">
             <h3 class="font-bold text-xl pb-4">Summary</h3>
